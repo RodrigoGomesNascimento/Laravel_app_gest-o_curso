@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<h3>Contato (view) </h3>
-=======
-<H2>Contato</H2>
+<h3>Esse é Sobre-nós</h3>
 <ul>
     <li>
         <a href="{{ route('site.index') }}">PRINCIPAL</a>
@@ -25,4 +22,3 @@
         <a href="{{ route('app.produtos') }}">PRODUTOS</a>
     </li>
 </ul>
->>>>>>> 521a829 (first app_gestão)
