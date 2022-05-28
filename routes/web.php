@@ -41,7 +41,9 @@ options
 Route::get('/', 'PrincipalController@principal');
 Route::get('/sobre-nos', 'SobreNosController@sobreNos');
 Route::get('/contato', 'ContatoController@contato');
-Route::get('/contato/{nome}/{categoria}/{assunto}/{mensagem}',
- function(string $nome, string $categoria, string $assunto, string $mensagem) {
+
+//rota com parametros.
+Route::get('/contato/{nome?}/{categoria?}/{assunto?}/{mensagem?}',
+ function(string $nome = 'Não informado', string $categoria = 'Não informada', string $assunto = 'desconhecido', string $mensagem = 'mensagem não informada') {
     echo "Estamos aaquiii: .$nome - $categoria - $assunto - $mensagem";
 });
